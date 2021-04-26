@@ -6,21 +6,19 @@ export const Container = styled.div`
   top: 0;
   bottom: 0;
   background: black;
-  width: 90px;
+  width: 110px;
   z-index: 1;
-  min-height: 100vh;
-  max-height: 100vh;
   text-align: center;
 
-  @media screen and (min-width: 320px) and (max-width: 819px) and (orientation: landscape) {
-    min-height: 100vw;
+  @media screen and (max-width: 800px){
+    width: 85px;
   }
 `;
 
 export const Header = styled.div`
   background: black;
   display: block;
-  padding: 1px 8px;
+  padding: 0px 8px;
   }
 `;
 
@@ -39,17 +37,21 @@ export const Nav = styled.nav`
   position: absolute;
   text-align: center;
   border-top: 1px solid #515152;
+ 
 `;
 
 export const NavLink = styled(Link)`
-  padding: 12px 27px;
+  padding: 17px 35px;
   color: ${props => props.theme.accent};
   display: block;
   position: relative;
   text-align: center;
-  font-size: 25px;
   border-bottom: 1px solid #515152;
 
+ @media only screen and (max-width: 800px) {
+    padding: 10px 27px;
+  }
+  @media only screen and (min-width: 800px) {
   > svg {
     transition: all 0.3s ease-out;
   }
@@ -64,12 +66,12 @@ export const NavLink = styled(Link)`
   }
 
   &:after {
-    font-size: 15px;
+    font-family: 'Zen Dots', cursive;
+    font-size: 13px;
     letter-spacing: 1px;
     position: absolute;
     bottom: 30%;
     left: 0;
-    display: block;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -77,19 +79,19 @@ export const NavLink = styled(Link)`
   }
 
   &[name]:after {
-    text-transform: uppercase;
     content: attr(name);
   }
 
   &:hover:after {
     opacity: 1;
-  }
+  } 
+}
 `;
 
 
 export const List = styled.ul`
   position: absolute;
-  height: 40px;
+  height: 20px;
   bottom: 25%;
   width: 100%;
   display: block;
@@ -97,8 +99,8 @@ export const List = styled.ul`
   list-style: none;
   
 
-  @media only screen and (max-height: 619px) {
-    display: none;
+  @media only screen and (max-width: 800px) {
+    height: 60px;
   }
 `;
 
@@ -110,6 +112,11 @@ export const ChildrenList = styled.li`
     margin: auto;
     color: ${props => props.theme.primary};
     transition: transform .5s;
+
+    @media screen and (max-width: 800px){
+      width: 35%;
+      padding: 5px 0;
+    }
 
     &#github:hover {
       color: white;

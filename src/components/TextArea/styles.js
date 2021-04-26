@@ -56,13 +56,13 @@ export const Container = styled.div`
   color: #ffffff;
   font-size: 4vh;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     font-size: 5vw;
   }
 
-  @media screen and (min-height: 320px) and (max-height: 819px) and (orientation: portrait) {
+  @media screen and (max-height: 820px) and (orientation: portrait) {
     font-size: 3vh;
-    left: 90px;
+    left: 120px;
   }
 `;
 
@@ -79,17 +79,16 @@ export const Span = styled.span`
     color: ${props => props.theme.primary};
 }
     > span {
-      margin-left: 0.1em;
       color: ${props => props.theme.primary};
     }
   }
-  @media screen and (min-width: 320px) and (max-width: 819px) and (orientation: landscape) {
-    font-size: 7.1vw;
-    line-height: 7vw;
+  @media screen and (max-width: 800px) and (orientation: landscape){
+    font-size: 5vw;
+    line-height: 5vw;
   }
-  @media screen and (min-height: 320px) and (max-height: 819px) and (orientation: portrait) {
-    font-size: 7vw;
-    line-height: 8vw;
+  @media screen and (max-width: 820px) and (orientation: portrait) {
+    font-size: 5vw;
+    line-height: 5vw;
   }
 `;
 export const Sub = styled.h2`
@@ -109,8 +108,9 @@ export const Sub = styled.h2`
     opacity: 1;
   }
 
-  @media screen and (min-height: 320px) and (max-height: 819px) and (orientation: portrait) {
-    font-size: 0.45em;
+  @media screen and (max-width: 800px) and (orientation: portrait) {
+    font-size: 10px;
+    width: 55vw;
   }
 `;
 
@@ -119,7 +119,7 @@ export const Button = styled.button`
   color: ${props => props.theme.primary};
   opacity: 0;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 40px;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
   font-size: 0.6em;
@@ -140,9 +140,13 @@ export const Button = styled.button`
       color: ${props => props.theme.background};
       box-shadow: 300px 0 0 0 ${props => props.theme.primary} inset,-300px 0 0 0 ${props => props.theme.primary} inset;
 }
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  font-size: 0.5em;
+}
 `;
 
-const deconstructed1 = keyframes `
+const deconstructed = keyframes `
   0% {
     transform: translateX(-100%);
     opacity -1;
@@ -157,7 +161,7 @@ export const Paragraph = styled.div`
   margin-top: 40px;
   font-size: 0.55em;
   animation: ${toAnimate} 1s 2s backwards;
-  animation: ${deconstructed1} 5s;
+  animation: ${deconstructed} 5s;
   > * {
     margin: 10px auto;
   }
@@ -166,12 +170,12 @@ export const Paragraph = styled.div`
     width: 50vw;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 819px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape){
     width: 70vw;
     font-size: 0.5em;
   }
 
-  @media screen and (min-height: 320px) and (max-height: 819px) and (orientation: portrait) {
+  @media screen and (max-height: 820px) and (orientation: portrait) {
     width: 38vh;
     font-size: 0.7em;
     & > p:nth-child(2) {
@@ -195,7 +199,7 @@ export const Title = styled.h1`
     color: white;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 819px) and (orientation: landscape) {
+  @media screen and (max-width: 800px) and (orientation: landscape){
     font-size: 5vw;
   }
 `;

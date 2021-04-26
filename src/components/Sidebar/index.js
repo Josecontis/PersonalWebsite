@@ -34,19 +34,19 @@ export default function Sidebar() {
           </Link>
         </Header>
         <Nav>
-          <NavLink exact to="/" name="home" activeClassName="active">
+          <NavLink exact to="/" name=".home()" activeClassName="active">
             <Home />
           </NavLink>
-          <NavLink to="about" name="about" activeClassName="active">
+          <NavLink to="about" name=".info personali()" activeClassName="active">
             <About />
           </NavLink>
-          <NavLink to="skills" name="skills" activeClassName="active">
+          <NavLink to="skills" name=".abilità()" activeClassName="active">
             <Skills />
           </NavLink>
-          <NavLink to="works" name="works" activeClassName="active">
+          <NavLink to="works" name=".progetti()" activeClassName="active">
             <Works />
           </NavLink>
-          <NavLink to="contact" name="contact" activeClassName="active">
+          <NavLink to="contact" name=".contatti()" activeClassName="active">
             <Contact />
           </NavLink>
         </Nav>
@@ -54,7 +54,7 @@ export default function Sidebar() {
           <ChildrenList>
             <LinkBlank
               id="github"
-              href="https://github.com/WilliamJesusDev"
+              href="https://github.com/Josecontis"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,7 +64,7 @@ export default function Sidebar() {
           <ChildrenList>
             <LinkBlank
               id="linkedin"
-              href="https://linkedin.com/in/WilliamJesusDev"
+              href="https://www.linkedin.com/in/giuseppe-conticchio-01a414159/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -74,7 +74,7 @@ export default function Sidebar() {
           <ChildrenList>
             <LinkBlank
               id="facebook"
-              href="https://www.facebook.com/WillZinhOZ"
+              href="https://www.facebook.com/giuseppe.conticchio.5"
               target="_blank"
               rel="noopener noreferrer"
             >

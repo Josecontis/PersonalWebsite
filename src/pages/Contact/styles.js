@@ -7,14 +7,17 @@ export const Container = styled.form`
 
 export const Label = styled.label`
   flex: 1;
+  
 `;
 
 export const Input = styled.input`
-  flex: 1;
-  width: ${props => props.width || "46%"};
+  width: ${props => props.width || "47%"};
   height: 4em;
   margin: 2% 2%;
   border: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  margin-left: 0px;
   border-radius: 0.3em;
   background: #8d8d8d;
   padding: 0.25em 1em;
@@ -23,13 +26,22 @@ export const Input = styled.input`
   ::placeholder { 
     color: white;
   }
+
+  @media only screen and (max-width: 800px) {
+  height: 3em;
+  margin: 2% 5%;
+  margin-left: -10px;
+  font-size: 10px;
+  }
 `;
 
 export const Text = styled.textarea`
-  flex: 1;
   width: 96%;
   margin: 2% 2%;
   border: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  margin-left: 0px;
   border-radius: 0.3em;
   background: #8d8d8d;
   padding: 1.5em 1em;
@@ -38,4 +50,10 @@ export const Text = styled.textarea`
   ::placeholder { 
     color: white;
   }
+
+  @media only screen and (max-width: 800px) {
+    margin: 1% 1%;
+    margin-left: -10px;
+    font-size: 10px;
+    }
 `;

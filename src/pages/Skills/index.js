@@ -10,7 +10,7 @@ export default function About() {
     <React.Fragment>
       <LogoArea />
       <TagsArea />
-      <TextArea title="Tecnologie" />
+      <TextArea title="Competenze" />
     </React.Fragment>
   );
 }
