@@ -20,6 +20,7 @@ html {
   color: ${props => props.theme.foreground};
   font-size: 1em;
   line-height: 1.4em;
+  
 }
 
 body {

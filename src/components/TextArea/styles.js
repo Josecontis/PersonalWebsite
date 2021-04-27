@@ -52,18 +52,7 @@ export const Container = styled.div`
   top: 30%;
   left: 145px;
   user-select: none;
-
   color: #ffffff;
-  font-size: 4vh;
-
-  @media screen and (max-width: 800px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-
-  @media screen and (max-height: 820px) and (orientation: portrait) {
-    font-size: 3vh;
-    left: 120px;
-  }
 `;
 
 
@@ -72,7 +61,7 @@ export const Span = styled.span`
   line-height: 7vh;
   font-size: 7.2vh;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
-  display: inline-block;
+ 
     
   &:hover {
     animation: ${rubberBand} 1s ease backwards;
@@ -82,11 +71,11 @@ export const Span = styled.span`
       color: ${props => props.theme.primary};
     }
   }
-  @media screen and (max-width: 800px) and (orientation: landscape){
+  @media screen and (max-width: 1000px) and (orientation: landscape){
     font-size: 5vw;
     line-height: 5vw;
   }
-  @media screen and (max-width: 820px) and (orientation: portrait) {
+  @media screen and (max-width: 1000px) and (orientation: portrait) {
     font-size: 5vw;
     line-height: 5vw;
   }
@@ -94,23 +83,17 @@ export const Span = styled.span`
 export const Sub = styled.h2`
   margin-top: 35px;
   color: #8d8d8d;
-  font-size: ${props => props.size || ".38em"};
-  letter-spacing: 0.25em;
+  font-size: ${props => props.size || "1.25em"};
+  letter-spacing: 0.1em;
   opacity: 0;
-
-  &.fast {
-    animation: ${toAnimate} 2s backwards;
-    opacity: 1;
-  }
-
+  
   &.active {
     animation: ${toAnimate} 2s backwards;
     opacity: 1;
   }
 
-  @media screen and (max-width: 800px) and (orientation: portrait) {
-    font-size: 10px;
-    width: 55vw;
+  @media screen and (max-width: 1000px) and (orientation: portrait) {
+    font-size: 1em;
   }
 `;
 
@@ -122,7 +105,7 @@ export const Button = styled.button`
   margin-top: 40px;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
-  font-size: 0.6em;
+  font-size: 1.8em;
   letter-spacing: 0.1em;
   padding: 0.5em 1em;
   border: 2px solid ${props => props.theme.primary};
@@ -141,8 +124,8 @@ export const Button = styled.button`
       box-shadow: 300px 0 0 0 ${props => props.theme.primary} inset,-300px 0 0 0 ${props => props.theme.primary} inset;
 }
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
-  font-size: 0.5em;
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  font-size: 1em;
 }
 `;
 

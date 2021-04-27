@@ -33,25 +33,18 @@ export const Container = styled.div`
     animation: ${svgRotation} 5s;
 
     *#G {
-      
-      animation: ${svgAnimation} 12s;
-     animation: ${svgRotation} 5s;
+    animation: ${svgAnimation} 12s;
+    animation: ${svgRotation} 5s;
     }
     *#C {
       animation: ${svgAnimation} 36s;
-      
     }
   }
 
-  @media(max-width: 1079px) {
+  @media screen and (max-width: 2100px) and (orientation: landscape){
     display: none;
   }
-
-  @media(max-width: 1359px) {
-    right: 2vh;
-    > svg {
-      right: 2vh;
-    }
+  @media screen and (max-height: 2100px) and (orientation: portrait) {
+    display: none;
   }
-}
 `;

@@ -97,11 +97,6 @@ export const List = styled.ul`
   display: block;
   padding: 0;
   list-style: none;
-  
-
-  @media only screen and (max-width: 800px) {
-    height: 60px;
-  }
 `;
 
 export const ChildrenList = styled.li`
