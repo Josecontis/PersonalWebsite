@@ -20,22 +20,23 @@ const subAnimation = keyframes`
 `;
 export const SubDate = styled.span`
   padding-top: 30px;
-  padding-left: 330px;
+  padding-left: 310px;
   position: absolute;
   font-family: 'Zen Dots', cursive;
-  font-size: 22px;
+  font-size: 25px;
   width: 50vw;
   animation: ${subAnimation} 1s ease-out alternate infinite;
+  
 `;
 
 export const MonthStyle = styled.span`
-  padding-left: 330px;
+  padding-left: 310px;
   bottom: 48%;
   font-weight: bold;
   position: absolute;
   text-transform: uppercase;
   font-family: 'Zen Dots', bold;
-  font-size: 30px;
+  font-size: 35px;
   width: 20vw;
   animation: ${dateAnimation} 12s;
 `;
@@ -43,6 +44,8 @@ export const MonthStyle = styled.span`
 export const Container = styled.div`
 padding: 19vw 59vw;
 position: absolute;
+color: #8d8d8d;
+user-select: none;
 
 @media screen and (max-width: 2200px) and (orientation: landscape){
   display: none;

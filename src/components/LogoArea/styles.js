@@ -17,7 +17,9 @@ const svgRotation = keyframes`
 
 export const Container = styled.div`
   position: absolute;
+  align-items: center;
   height: 90vh;
+  user-select: none;
   overflow: hidden;
   width: 90vw;
   top: 0;

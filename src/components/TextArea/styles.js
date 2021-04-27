@@ -140,9 +140,9 @@ const deconstructed = keyframes `
   `;
 
 export const Paragraph = styled.div`
-  width: 35vw;
-  margin-top: 40px;
-  font-size: 0.55em;
+  width: 40vw;
+  margin-top: 70px;
+  font-size: 25px;
   animation: ${toAnimate} 1s 2s backwards;
   animation: ${deconstructed} 5s;
   > * {
@@ -160,7 +160,6 @@ export const Paragraph = styled.div`
 
   @media screen and (max-height: 820px) and (orientation: portrait) {
     width: 38vh;
-    font-size: 0.7em;
     & > p:nth-child(2) {
       display: none;
     }

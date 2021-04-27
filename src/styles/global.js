@@ -26,6 +26,21 @@ html {
 body {
   background: ${props => props.theme.background};
   -webkit-font-smoothing: antialiased;
+  background: linear-gradient(-45deg,  ${props => props.theme.primary}, ${props => props.theme.second}, ${props => props.theme.background}, ${props => props.theme.background});
+	background-size: 400% 400%;
+	animation: gradient 5s ease;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 body,

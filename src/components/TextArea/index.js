@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Typing from "react-typing-animation";
 import { Link } from "react-router-dom";
 
-import { Container, Span, Sub, Button, Title } from "./styles";
+import { Container, Span, Sub, Button, Title, Paragraph } from "./styles";
 
 export default function TextArea({ home, pre, title, subtitle, children }) {
   const [actived, setActived] = useState(false);
@@ -14,7 +14,7 @@ export default function TextArea({ home, pre, title, subtitle, children }) {
         cursor={<span>_</span>}
         speed={150}
         onFinishedTyping={() => setActived(true)}>
- {!home ? (
+        {!home ? (
           <Title>{title}</Title> //in questo caso se non è la homepage stampa il titolo
         ) : (
           <React.Fragment>
@@ -43,7 +43,7 @@ export default function TextArea({ home, pre, title, subtitle, children }) {
           <Button className={actived && "active"}>CONTATTAMI</Button>
         </Link>
       )}
-      
+      <Paragraph>{children}</Paragraph>
     </Container>
   );
 }
