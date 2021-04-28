@@ -1,15 +1,17 @@
 import React from "react";
 
 import TagsArea from "../../components/TagsArea";
-import LogoArea from "../../components/LogoArea";
 import TextArea from "../../components/TextArea";
+import {Text, Bar, BarList} from "./styles";
 
 export default function About() {
-  document.title = "Tecnologie | Giuseppe Conticchio";
+  document.title = "Competenze | Giuseppe Conticchio";
   return (
     <React.Fragment>
-      <LogoArea />
       <TagsArea />
+      <BarList>
+      <Bar skill="CSS" perc="20%" />
+      </BarList>
       <TextArea title="Competenze" />
     </React.Fragment>
   );

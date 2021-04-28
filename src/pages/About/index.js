@@ -2,14 +2,13 @@ import React from "react";
 
 import TagsArea from "../../components/TagsArea";
 import TextArea from "../../components/TextArea";
-import {Text, Bar} from "./styles";
+import {Text} from "./styles";
 
 export default function About() {
   document.title = "Bio | Giuseppe Conticchio";
   return (
     <React.Fragment>
       <TagsArea />
-      <Bar />
       <TextArea title="Biografia"><br/>
         <Text>
           cc em Análise e Desenvolvimento de Sistemas pela Universidade

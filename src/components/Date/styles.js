@@ -20,23 +20,23 @@ const subAnimation = keyframes`
 `;
 export const SubDate = styled.span`
   padding-top: 30px;
-  padding-left: 310px;
+  padding-left: 360px;
   position: absolute;
   font-family: 'Zen Dots', cursive;
-  font-size: 25px;
+  font-size: 20px;
   width: 50vw;
   animation: ${subAnimation} 1s ease-out alternate infinite;
   
 `;
 
 export const MonthStyle = styled.span`
-  padding-left: 310px;
+  padding-left: 360px;
   bottom: 48%;
   font-weight: bold;
   position: absolute;
   text-transform: uppercase;
   font-family: 'Zen Dots', bold;
-  font-size: 35px;
+  font-size: 25px;
   width: 20vw;
   animation: ${dateAnimation} 12s;
 `;
