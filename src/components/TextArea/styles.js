@@ -55,22 +55,23 @@ export const Container = styled.div`
   color: #ffffff;
 `;
 
-
 export const Span = styled.span`
   letter-spacing: 0.05em;
   line-height: 7vh;
   font-size: 7.2vh;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
- 
-    
+  display: inline-block;
+  
   &:hover {
     animation: ${rubberBand} 1s ease backwards;
     color: ${props => props.theme.primary};
 }
-    > span {
-      color: ${props => props.theme.primary};
-    }
-  }
+
+> span {
+  margin-left: 0.1em;
+  color: ${props => props.theme.second};
+}
+
   @media screen and (max-width: 1000px) and (orientation: landscape){
     font-size: 5vw;
     line-height: 5vw;
@@ -80,6 +81,9 @@ export const Span = styled.span`
     line-height: 5vw;
   }
 `;
+
+
+
 export const Sub = styled.h2`
   margin-top: 35px;
   color: #8d8d8d;

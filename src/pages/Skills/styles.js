@@ -19,24 +19,19 @@ const barAnimation = keyframes`
   opacity 1;
 }
 `;
-
-export const Bar = styled.div`
+export const BarList = styled.div`
+width: 30%;
+margin-left: 60vw;
+margin-top: 30vh;
+`;
+export const BarContent = styled.div`
   border-radius: 10px;
   background: ${props => props.theme.background};
   height: 25px;
   
-  animation: ${props => load(props.perc)} 5s normal forwards;
+  animation: ${props => load(props.perc)} 5s 3.5s normal forwards;
   background: linear-gradient(-45deg, ${props => props.theme.background}, ${props => props.theme.background},${props => props.theme.second}, ${props => props.theme.primary});
   
-
-  &::after {
-    letter-spacing: 0.2em;
-    font-family: 'Orbitron';
-    font-weight: bold;
-    font-size: 16px;
-    color: white;
-    content: '${props => props.perc}';
-  }
   &::before{
     letter-spacing: 0.2em;
     font-family: 'Orbitron';
@@ -55,22 +50,33 @@ export const Bar = styled.div`
   }    
 `;
 
-export const BarList = styled.div`
+export const BarComponent = styled.div`
   height: 30px;
+  margin-top: 30px;
   align-items: center;
   padding: 2px 2px;
   display: flex;
   position: relative;
   background: ${props => props.theme.primary};
   border-radius: 10px;
-  width: 30%;
-  margin-left: 60vw;
-  margin-top: 30vh;
-  animation: ${barAnimation} 5s;
-  transition: box-shadow .5s;
+
+  animation: ${barAnimation} 8s;
+  transition: box-shadow 0.1s;
+
+  &::after{
+    letter-spacing: 0.2em;
+    font-family: 'Orbitron';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: 5px;
+
+    content: '${props => props.perc}';
+  }
 
   &:hover {
-    box-shadow: 0 0 14px ${props => props.theme.second};
+    box-shadow: 0 0 30px ${props => props.theme.second};
   }
  
   @media screen and (max-width: 1600px) and (orientation: landscape){

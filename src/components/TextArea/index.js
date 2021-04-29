@@ -23,8 +23,11 @@ export default function TextArea({ home, pre, title, subtitle, children }) {
               
               switch (char) {
                 case "~":
-                  return <br key={Math.random()} />;
-                
+                  return <br key={Math.random()}/>;
+                  case "":
+                    return " ";
+                  case " ":
+                    return " ";
                 default:
                   return (
                     <Span key={Math.random()} >
