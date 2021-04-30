@@ -19,6 +19,7 @@ export const Container = styled.div`
   position: absolute;
   align-items: center;
   height: 90vh;
+  display: block;
   user-select: none;
   overflow: hidden;
   width: 90vw;

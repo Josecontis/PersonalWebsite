@@ -22,7 +22,7 @@ import {
   LinkBlank,
   List,
   ChildrenList
-} from "./styles";
+} from "./sidebar.styles";
 
 export default function Sidebar() {
   return (
@@ -46,7 +46,7 @@ export default function Sidebar() {
           <NavLink to="works" name=".progetti()" activeClassName="active">
             <Works />
           </NavLink>
-          <NavLink to="contact" name=".contatti()" activeClassName="active">
+          <NavLink to="contacts" name=".contatti()" activeClassName="active">
             <Contact />
           </NavLink>
         </Nav>

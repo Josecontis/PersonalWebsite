@@ -50,7 +50,7 @@ user-select: none;
 @media screen and (max-width: 2200px) and (orientation: landscape){
   display: none;
 }
-@media screen and (max-height: 2200px) and (orientation: portrait) {
+@media screen and (max-height: 1100px) and (orientation: landscape){
   display: none;
 }
 

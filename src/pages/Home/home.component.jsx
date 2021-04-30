@@ -1,12 +1,12 @@
 import React from "react";
 
-import TagsArea from "../../components/TagsArea";
-import LogoArea from "../../components/LogoArea";
-import TextArea from "../../components/TextArea";
-import HomePageDate from "../../components/Date";
+import TagsArea from "../../components/TagsArea/tags_area.component";
+import LogoArea from "../../components/LogoArea/logo.component";
+import TextArea from "../../components/TextArea/text_area.component";
+import HomePageDate from "../../components/Date/date.component";
 
 export default function Home() {
-  document.title = "Giuseppe Conticchio";
+  document.title = "Home | Giuseppe Conticchio";
 
   return (
     <React.Fragment>

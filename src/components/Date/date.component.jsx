@@ -1,5 +1,5 @@
 import React from "react";
-import { DateStyle, SubDate, MonthStyle, Container } from './styles';
+import { DateStyle, SubDate, MonthStyle, Container } from './date.styles';
 
 class HomePageDate extends React.Component {
   constructor() {

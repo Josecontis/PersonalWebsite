@@ -2,9 +2,9 @@ import React from "react";
 import { HashRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import { GlobalStyle, Page, Container } from "./styles/global";
+import { GlobalStyle, Page, Container } from "./styles/global.styles";
 
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar/sidebar.component";
 
 import Routes from "./routes";
 

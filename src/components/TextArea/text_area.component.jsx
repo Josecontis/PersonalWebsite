@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Typing from "react-typing-animation";
 import { Link } from "react-router-dom";
 
-import { Container, Span, Sub, Button, Title, Paragraph } from "./styles";
+import { Container, Span, Sub, Button, Title, Paragraph } from "./text_area.styles";
 
 export default function TextArea({ home, pre, title, subtitle, children }) {
   const [actived, setActived] = useState(false); //assegna false a activated tramite il metodo setactived

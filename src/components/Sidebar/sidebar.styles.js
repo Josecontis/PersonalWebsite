@@ -109,7 +109,7 @@ export const ChildrenList = styled.li`
     color: ${props => props.theme.primary};
     transition: transform .5s;
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 700px){
       width: 35%;
       padding: 5px 0;
     }

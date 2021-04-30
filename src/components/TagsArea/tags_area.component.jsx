@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container as Tags } from "./styles";
+import { Container as Tags } from "./tags_area.styles";
 
 export default function TagsArea({ indent, h1Position, pPosition, _pPosition, home }) {
   return (

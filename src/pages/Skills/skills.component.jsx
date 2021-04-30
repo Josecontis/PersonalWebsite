@@ -1,10 +1,10 @@
 import React from "react";
 
-import TagsArea from "../../components/TagsArea";
-import TextArea from "../../components/TextArea";
-import {Text, BarList, BarContent, BarComponent} from "./styles";
+import TagsArea from "../../components/TagsArea/tags_area.component";
+import TextArea from "../../components/TextArea/text_area.component";
+import {Text, BarList, BarContent, BarComponent} from "./skills.styles";
 
-export default function About() {
+export default function Skills() {
   document.title = "Competenze | Giuseppe Conticchio";
   return (
     <React.Fragment>

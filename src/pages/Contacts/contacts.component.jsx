@@ -1,12 +1,12 @@
 import React from "react";
 
-import TagsArea from "../../components/TagsArea";
-import LogoArea from "../../components/LogoArea";
-import TextArea from "../../components/TextArea";
+import TagsArea from "../../components/TagsArea/tags_area.component";
+import LogoArea from "../../components/LogoArea/logo.component";
+import TextArea from "../../components/TextArea/text_area.component";
 
-import { Container, Label, Input, Text } from "./styles";
+import { Container, Label, Input, Text } from "./contacts.styles";
 
-export default function About() {
+export default function Contacts() {
   document.title = "Conttati | Giuseppe Conticchio";
   return (
     <React.Fragment>

@@ -1,20 +1,20 @@
 {
-  "name": "williamsportfolio",
+  "name": "giuseppeportfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.1.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
     "react-typing-animation": "^1.6.2",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build -b master -r https://github.com/williamjesusdev/williamjesusdev.github.io -f"
+    "deploy": "gh-pages -d build -b master -r https://github.com/Josecontis/PersonalWebsite.git -f"
   },
   "eslintConfig": {
     "extends": "react-app"
