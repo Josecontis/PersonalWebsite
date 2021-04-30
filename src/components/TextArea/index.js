@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Container, Span, Sub, Button, Title, Paragraph } from "./styles";
 
 export default function TextArea({ home, pre, title, subtitle, children }) {
-  const [actived, setActived] = useState(false);
+  const [actived, setActived] = useState(false); //assegna false a activated tramite il metodo setactived
 
   return (
     <Container>
@@ -24,10 +24,10 @@ export default function TextArea({ home, pre, title, subtitle, children }) {
               switch (char) {
                 case "~":
                   return <br key={Math.random()}/>;
-                  case "":
-                    return " ";
-                  case " ":
-                    return " ";
+                case "":
+                  return " ";
+                case " ":
+                  return " ";
                 default:
                   return (
                     <Span key={Math.random()} >

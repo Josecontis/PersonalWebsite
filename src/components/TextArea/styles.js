@@ -53,6 +53,7 @@ export const Container = styled.div`
   left: 145px;
   user-select: none;
   color: #ffffff;
+  font-size: 6vh;
 `;
 
 export const Span = styled.span`
@@ -87,9 +88,11 @@ export const Span = styled.span`
 export const Sub = styled.h2`
   margin-top: 35px;
   color: #8d8d8d;
-  font-size: ${props => props.size || "1.25em"};
+  margin-left: 10px;
+  font-size: ${props => props.size || ".3em"};
   letter-spacing: 0.1em;
   opacity: 0;
+  
   
   &.active {
     animation: ${toAnimate} 2s backwards;
@@ -97,7 +100,7 @@ export const Sub = styled.h2`
   }
 
   @media screen and (max-width: 1000px) and (orientation: portrait) {
-    font-size: 1em;
+    font-size: 0.3em;
   }
 `;
 
@@ -109,7 +112,7 @@ export const Button = styled.button`
   margin-top: 40px;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
-  font-size: 1.8em;
+  font-size: 0.5em;
   letter-spacing: 0.1em;
   padding: 0.5em 1em;
   border: 2px solid ${props => props.theme.primary};
@@ -129,7 +132,7 @@ export const Button = styled.button`
 }
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
-  font-size: 1em;
+  font-size: 0.3em;
 }
 `;
 
