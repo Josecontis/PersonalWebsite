@@ -3,5 +3,5 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import {bubbleCursor} from './bubble';
 
-new bubbleCursor({ element: document.querySelector("#bubbles") })
+new bubbleCursor();
 ReactDOM.render(<App />, document.getElementById("Portfolio App"));

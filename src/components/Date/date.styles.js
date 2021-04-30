@@ -57,8 +57,8 @@ user-select: none;
 `;
 
 export const DateStyle = styled.div`
-  font-size 200px;
-  font-family: Monument Extended, sans-serif;
+  font-size 180px;
+  font-family: 'Zen Dots', cursive;
   -webkit-font-smoothing: antialiased;
   -webkit-text-fill-color: rgba(0,0,0,0);
   -webkit-text-stroke-color: ${props => props.theme.primary};
