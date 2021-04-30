@@ -73,11 +73,11 @@ export const Span = styled.span`
   color: ${props => props.theme.second};
 }
 
-  @media screen and (max-width: 1000px) and (orientation: landscape){
+  @media screen and (max-width: 800px) and (orientation: landscape){
     font-size: 5vw;
     line-height: 5vw;
   }
-  @media screen and (max-width: 1000px) and (orientation: portrait) {
+  @media screen and (max-width: 800px) and (orientation: portrait) {
     font-size: 5vw;
     line-height: 5vw;
   }

@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const Header = styled.div`
   background: black;
   display: block;
-  padding: 0px 8px;
+  padding: 6px 5px;
   }
 `;
 
@@ -27,6 +27,7 @@ export const Logo = styled.img`
   display: block;
   margin: 30px 3px;
   width: 100%;
+  height: 100%;
 `;
 
 export const LinkBlank = styled.a``;

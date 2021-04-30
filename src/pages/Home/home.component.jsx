@@ -12,7 +12,7 @@ export default function Home() {
     <React.Fragment>
       <LogoArea />
       <HomePageDate/>
-      <TagsArea indent="850" h1Position="47" pPosition="49" _pPosition="54" home={true} />
+      <TagsArea indent="680" h1Position="47" pPosition="50" _pPosition="56" home={true} />
       <TextArea
         home={true}
         pre={"Ciao,~Sono Giuseppe,~Web Developer!"}

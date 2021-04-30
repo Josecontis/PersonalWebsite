@@ -23,7 +23,7 @@ export const Container = styled.div`
   user-select: none;
   overflow: hidden;
   width: 90vw;
-  top: 0;
+  top: -2vw;
   bottom: 0;
   right: 5vw;
   left: 30vw;
@@ -31,8 +31,8 @@ export const Container = styled.div`
   > svg {
     right: 5vw;
     left: auto;
-    max-height: 90vh;
-    max-width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
     animation: ${svgRotation} 5s;
 
     *#G {
@@ -44,10 +44,10 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 2100px) and (orientation: landscape){
+  @media screen and (max-width: 800px) and (orientation: landscape){
     display: none;
   }
-  @media screen and (max-height: 2100px) and (orientation: portrait) {
+  @media screen and (max-height: 800px) and (orientation: portrait) {
     display: none;
   }
 `;
