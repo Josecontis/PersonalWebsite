@@ -44,10 +44,10 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 800px) and (orientation: landscape){
+  @media screen and (max-width: 1600px) and (orientation: landscape){
     display: none;
   }
-  @media screen and (max-height: 800px) and (orientation: portrait) {
+  @media screen and (max-height: 1600px) and (orientation: portrait) {
     display: none;
   }
 `;

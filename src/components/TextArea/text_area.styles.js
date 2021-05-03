@@ -104,38 +104,6 @@ export const Sub = styled.h2`
   }
 `;
 
-export const Button = styled.button`
-  background: ${props => props.theme.background};
-  color: ${props => props.theme.primary};
-  opacity: 0;
-  display: inline-block;
-  margin-top: 40px;
-  cursor: pointer;
-  font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
-  font-size: 0.5em;
-  letter-spacing: 0.1em;
-  padding: 0.5em 1em;
-  border: 2px solid ${props => props.theme.primary};
-  
-  -webkit-transition: ease-out 0.5s;
-  -moz-transition: ease-out 0.5s;
-  transition: ease-out 0.5s all;
-  
-    &.active {
-      animation: ${toAnimate} 5s backwards;
-      opacity: 1;
-    }
-    
-    &:hover {
-      color: ${props => props.theme.background};
-      box-shadow: 300px 0 0 0 ${props => props.theme.primary} inset,-300px 0 0 0 ${props => props.theme.primary} inset;
-}
-
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-  font-size: 0.3em;
-}
-`;
-
 const deconstructed = keyframes `
   0% {
     transform: translateX(-100%);

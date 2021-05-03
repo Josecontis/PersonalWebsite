@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Typing from "react-typing-animation";
 import { Link } from "react-router-dom";
 
-import { Container, Span, Sub, Button, Title, Paragraph } from "./text_area.styles";
+import CustomButton from '../../components/Button/button.component';
+import { Container, Span, Sub, Title, Paragraph } from "./text_area.styles";
 
 export default function TextArea({ home, pre, title, subtitle, children }) {
   const [actived, setActived] = useState(false); //assegna false a activated tramite il metodo setactived
@@ -42,8 +43,8 @@ export default function TextArea({ home, pre, title, subtitle, children }) {
       {home && <Sub className={actived && "active"}>{subtitle}</Sub>}
       
       {home && (
-        <Link to="contact">
-          <Button className={actived && "active"}>CONTATTAMI</Button>
+        <Link to="contacts">
+          <CustomButton className={actived && "active"} >CONTATTAMI</CustomButton>
         </Link>
       )}
       <Paragraph>{children}</Paragraph>
