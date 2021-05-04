@@ -1,29 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CloseBtn, Alert, Text } from './alert.styles';
 
 //verificare se funziona
-export default function CustomAlert(Severity) {
-    console.log('run',Severity);
-    if (Severity === 'success') {
-        <div class="alert success">
-            <span class="closebtn">×</span>
-            <strong>Success!</strong> Indicates a successful or positive action.
-        </div>
-        var close = document.getElementsByClassName("closebtn");
-        var i;
-        
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function(){
-                var div = this.parentElement;
-                div.style.opacity = "0";
-                setTimeout(function(){ div.style.display = "none"; }, 600);
-            }
-        }
-    }
-    else {
-        <div class="alert">
-            <span class="closebtn">×</span>
-            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-        </div>
-        
-    }
+export default function CustomAlert(props) {
+    const [actived, setActived] = useState(false);
+    console.log('success:', props.Success)
+    return (props.Success ?
+        (
+            <Alert value={actived} flag={props.Success}>
+                <CloseBtn onClick={() => setActived(true)}>×</CloseBtn>
+                <Text>OPERAZIONE AVVENUTA CON SUCCESSO!</Text>
+            </Alert>
+        ) : (
+            <Alert value={actived} flag={props.Success}>
+                <CloseBtn onClick={() => setActived(true)}>×</CloseBtn>
+                <Text>OPERAZIONE FALLITA!</Text>
+            </Alert>)
+    );
 }

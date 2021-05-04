@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import emailjs from 'emailjs-com';
 
 import LogoArea from "../../components/LogoArea/logo.component";
@@ -38,7 +38,7 @@ class Contacts extends Component {
 
     //console.log('tmpl', templateParams);
     emailjs.send('service_dx9tuej', 'template_03o7ni1', templateParams, 'user_a25h2t1IePEbQPptKN2TZ')
-      .then(templateParams ? <CustomAlert Severity='success' /> : <CustomAlert Severity='error' />);
+      .then(templateParams ? <CustomAlert Success={true}/> : <CustomAlert Success={false}/>);
   };
 
 
