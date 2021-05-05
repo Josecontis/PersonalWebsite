@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/header-logo.svg";
+import logo from "../../assets/sideBarImg/header-logo.svg";
 
-import { ReactComponent as Home } from "../../assets/home.svg";
-import { ReactComponent as About } from "../../assets/about.svg";
-import { ReactComponent as Skills } from "../../assets/skills.svg";
-import { ReactComponent as Works } from "../../assets/works.svg";
-import { ReactComponent as Contact } from "../../assets/contact.svg";
+import { ReactComponent as Home } from "../../assets/sideBarImg/home.svg";
+import { ReactComponent as About } from "../../assets/sideBarImg/about.svg";
+import { ReactComponent as Skills } from "../../assets/sideBarImg/skills.svg";
+import { ReactComponent as Works } from "../../assets/sideBarImg/works.svg";
+import { ReactComponent as Contact } from "../../assets/sideBarImg/contact.svg";
 
-import { ReactComponent as Facebook } from "../../assets/facebook.svg";
-import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
-import { ReactComponent as Github } from "../../assets/github.svg";
+import { ReactComponent as Facebook } from "../../assets/sideBarImg/facebook.svg";
+import { ReactComponent as Linkedin } from "../../assets/sideBarImg/linkedin.svg";
+import { ReactComponent as Github } from "../../assets/sideBarImg/github.svg";
 
 import {
   Container,

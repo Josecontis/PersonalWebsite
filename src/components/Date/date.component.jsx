@@ -15,13 +15,12 @@ class HomePageDate extends React.Component {
     return (
       <Container>
         <DateStyle>
-          <span>{this.state.date}</span>
+          <span>{(this.state.date<10)?'0'+this.state.date:this.state.date}</span>
         </DateStyle>
         <div>
           <MonthStyle>
           <span>{this.state.monthNames[this.state.month]}</span></MonthStyle>
           <SubDate><span>Disponibile per lavoro</span></SubDate>
-          
         </div>
       </Container>
     );

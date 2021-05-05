@@ -106,17 +106,17 @@ export function bubbleCursor(options) {
     }
   
     function Particle(x, y, canvasItem) {
-      const lifeSpan = Math.floor(Math.random() * 60 + 60)
+      const lifeSpan = Math.floor(Math.random() * 160 + 60)
       this.initialLifeSpan = lifeSpan //
       this.lifeSpan = lifeSpan //ms
       this.velocity = {
         x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 10),
-        y: -0.4 + Math.random() * -1,
+        y: -0.5 + Math.random() * -1,
       }
       this.position = { x: x, y: y }
       this.canv = canvasItem
   
-      this.baseDimension = 4
+      this.baseDimension = 5
   
       this.update = function(context) {
         this.position.x += this.velocity.x
@@ -145,6 +145,5 @@ export function bubbleCursor(options) {
         context.closePath()
       }
     }
-  
     init();   
   }

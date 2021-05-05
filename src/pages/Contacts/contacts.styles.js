@@ -5,13 +5,8 @@ export const Container = styled.form`
   flex-direction: column:
 `;
 
-export const Label = styled.label`
-  flex: 1;
-  
-`;
-
 export const Input = styled.input`
-  width: ${props => props.width || "47%"};
+  width: ${props => props.width || "40%"};
   height: 4em;
   margin: 2% 2%;
   border: 0;
@@ -36,7 +31,7 @@ export const Input = styled.input`
 `;
 
 export const Text = styled.textarea`
-  width: 96%;
+  width: ${props => props.width || "40%"};
   margin: 2% 2%;
   border: 0;
   font-family: Roboto, sans-serif;

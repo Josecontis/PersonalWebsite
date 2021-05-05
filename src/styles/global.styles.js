@@ -2,18 +2,19 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
+  
   margin: 0;
   padding: 0;
   outline: 0;
-  box-sizing: border-box;
 }
 
 html,
 body,
 #app {
-  min-height: 100vh;
-  max-height: 100vh;
-  max-width: 100vw;
+  min-height: 90vh;
+  max-height: 90vh;
+  min-width: 90vw;
+  max-width: 90vw;
 }
 
 html {
@@ -36,10 +37,10 @@ body {
 		background-position: 0% 50%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 50% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 50% 0%;
 	}
 }
 
@@ -50,7 +51,7 @@ button {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90vw;
 }
 
 a {
@@ -76,28 +77,17 @@ input:focus {
 }
 `;
 
-export const Page = styled.div`
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-
-  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    min-height: 100vw;
-    min-width: 100vh;
-  }
-`;
-
 export const Container = styled.div`
   position: absolute;
   will-change: contents;
-  height: 94vh;
-  width: 100%;
+  height: 90vh;
+  width: 100vw;
   margin: 0 auto;
   top: 5vh;
   bottom: 5vh;
 
   @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    min-height: 94vw;
+    min-height: 100vw;
     min-width: 100vh;
     top: 5vw;
     bottom: 5vw;

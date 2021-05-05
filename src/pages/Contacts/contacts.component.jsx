@@ -6,7 +6,7 @@ import TextArea from "../../components/TextArea/text_area.component";
 
 
 import CustomButton from '../../components/Button/button.component';
-import { Container, Label, Input, Text } from "./contacts.styles";
+import { Container, Input, Text } from "./contacts.styles";
 import CustomAlert from '../../components/Alert/alert.component';
 
 document.title = "Contatti | Giuseppe Conticchio";
@@ -38,7 +38,7 @@ class Contacts extends Component {
 
     //console.log('tmpl', templateParams);
     emailjs.send('service_dx9tuej', 'template_03o7ni1', templateParams, 'user_a25h2t1IePEbQPptKN2TZ')
-      .then(templateParams ? <CustomAlert Success={true}/> : <CustomAlert Success={false}/>);
+      .then(templateParams ? <CustomAlert Success={true} /> : <CustomAlert Success={false} />);
   };
 
 
@@ -67,35 +67,20 @@ class Contacts extends Component {
         <LogoArea />
         <TextArea title="Contatti">
           <Container onSubmit={this.sendEmail}>
-            <Label htmlFor="name" hidden>
-              Nome
-          </Label>
             <Input placeholder="Nome" type="text" name="name" id="name" onChange={nameConstraints} />
-
-            <Label htmlFor="email" hidden>
-              Email
-          </Label>
             <Input placeholder="Email" type="text" name="email" id="email" onChange={emailConstraints} />
-
-            <Label htmlFor="subject" hidden>
-              Oggetto
-          </Label>
             <Input
               placeholder="Oggetto"
-              width="96%"
+              width="85%"
               type="text"
               name="subject"
               id="subject"
             />
-            <Label htmlFor="message" hidden>
-              Messaggio
-          </Label>
-
             <Text
               placeholder="Messaggio"
               name="message"
               id="message"
-              cols="30"
+              width="85%"
               rows="15"
               onChange={txtConstraints}
             ></Text>

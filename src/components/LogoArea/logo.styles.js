@@ -22,15 +22,12 @@ export const Container = styled.div`
   display: block;
   user-select: none;
   overflow: hidden;
-  width: 90vw;
+  width: 60vw;
   top: -2vw;
   bottom: 0;
-  right: 5vw;
-  left: 30vw;
+  left: 40vw;
 
   > svg {
-    right: 5vw;
-    left: auto;
     max-height: 100vh;
     max-width: 100vw;
     animation: ${svgRotation} 5s;

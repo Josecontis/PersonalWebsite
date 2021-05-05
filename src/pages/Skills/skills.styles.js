@@ -1,6 +1,6 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-const load = (perc) =>  keyframes`
+const load = (perc) => keyframes`
 0% { 
   width: 0; 
 }
@@ -19,10 +19,15 @@ const barAnimation = keyframes`
   opacity 1;
 }
 `;
+
+const percStyles = props => {
+  return props.perc > 90 ? 'color: white;' :'color: black;';
+};
+
 export const BarList = styled.div`
-width: 30%;
-margin-left: 60vw;
-margin-top: 30vh;
+  width: 30%;
+  margin-left: 60vw;
+  margin-top: 30vh;
 `;
 export const BarContent = styled.div`
   border-radius: 10px;
@@ -68,11 +73,12 @@ export const BarComponent = styled.div`
     font-family: 'Orbitron';
     font-weight: bold;
     font-size: 16px;
-    color: white;
+    ${percStyles}
+    
     position: absolute;
     right: 5px;
 
-    content: '${props => props.perc}';
+    content: '${props => props.perc}%';
   }
 
   &:hover {
@@ -85,18 +91,4 @@ export const BarComponent = styled.div`
   @media screen and (max-height: 1600px) and (orientation: portrait) {
     display: none;
   }
-`;
-
-export const Text = styled.h4`
-letter-spacing: 0.05em;
-font-size: 20px;
-
-@media screen and (max-width: 1000px) and (orientation: landscape){
-  font-size: 5vw;
-  line-height: 5vw;
-}
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-  font-size: 5vw;
-  line-height: 5vw;
-}
 `;
