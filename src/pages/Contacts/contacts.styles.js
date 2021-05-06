@@ -6,12 +6,12 @@ export const Container = styled.form`
 `;
 
 export const Input = styled.input`
-  width: ${props => props.width || "40%"};
-  height: 4em;
+  width: ${props => props.width || "14vw"};
+  height: 4vh;
   margin: 2% 2%;
   border: 0;
   font-family: Roboto, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   margin-left: 0px;
   border-radius: 0.3em;
   background: #8d8d8d;
@@ -31,11 +31,11 @@ export const Input = styled.input`
 `;
 
 export const Text = styled.textarea`
-  width: ${props => props.width || "40%"};
+  width: ${props => props.width || "14vw"};
   margin: 2% 2%;
   border: 0;
   font-family: Roboto, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   margin-left: 0px;
   border-radius: 0.3em;
   background: #8d8d8d;

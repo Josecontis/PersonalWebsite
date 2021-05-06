@@ -12,6 +12,7 @@ import { ReactComponent as Contact } from "../../assets/sideBarImg/contact.svg";
 import { ReactComponent as Facebook } from "../../assets/sideBarImg/facebook.svg";
 import { ReactComponent as Linkedin } from "../../assets/sideBarImg/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/sideBarImg/github.svg";
+import SwitchButton from '../Themebutton/themebutton.component';
 
 import {
   Container,
@@ -29,9 +30,11 @@ export default function Sidebar() {
     <React.Fragment>
       <Container>
         <Header>
+        
           <Link to="/">
             <Logo src={logo} alt="Giuseppe Conticchio Logo" />
           </Link>
+          <SwitchButton />
         </Header>
         <Nav>
           <NavLink exact to="/" name=".home()" activeClassName="active">

@@ -71,7 +71,7 @@ class Contacts extends Component {
             <Input placeholder="Email" type="text" name="email" id="email" onChange={emailConstraints} />
             <Input
               placeholder="Oggetto"
-              width="85%"
+              width="29vw"
               type="text"
               name="subject"
               id="subject"
@@ -80,7 +80,7 @@ class Contacts extends Component {
               placeholder="Messaggio"
               name="message"
               id="message"
-              width="85%"
+              width="29vw"
               rows="15"
               onChange={txtConstraints}
             ></Text>

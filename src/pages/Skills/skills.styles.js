@@ -29,6 +29,7 @@ export const BarList = styled.div`
   margin-left: 60vw;
   margin-top: 30vh;
 `;
+
 export const BarContent = styled.div`
   border-radius: 10px;
   background: ${props => props.theme.background};

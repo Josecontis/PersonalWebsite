@@ -11,14 +11,14 @@ const toAnimate = keyframes`
 
 const homeStyles = css`
   margin-top: 40px;
-  font-size: 0.5em;
+  font-size: 0.4em;
   letter-spacing: 0.1em;
   padding: 0.5em 1em;
 `;
 
 const isContact = css`
   margin-top: 10px;
-  font-size: 1em;
+  font-size: 0.7em;
   letter-spacing: 0.1em;
   padding: 0.5em 1em;
 `;

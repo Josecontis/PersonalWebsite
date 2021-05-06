@@ -3,7 +3,7 @@ import { HashRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalStyle, Container } from "./styles/global.styles";
-import SwitchButton from './components/Themebutton/themebutton.component';
+
 import Sidebar from "./components/Sidebar/sidebar.component";
 
 import Routes from "./routes";
@@ -22,7 +22,6 @@ export default function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <SwitchButton />
         <Sidebar />
         <Container>
           <Routes />

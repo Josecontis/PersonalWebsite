@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.label`
-position: relative;
-display: inline-block;
-  margin-top: 120px;
-  margin-left: 20px;
-  width: 60px;
-  height: 27px;
-  z-index: 2;
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
 `;
 
 export const Checkbox = styled.input.attrs({ type: 'checkbox' })`
@@ -18,7 +15,7 @@ export const Slider = styled.span`
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
+  left: 2px;
   right: 0;
   bottom: 0;
  
@@ -30,9 +27,9 @@ export const Slider = styled.span`
   &:before {
     position: absolute;
     content: "";
-    border-radius: 50px;
-    height: 26px;
-    width: 26px;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
     transition: 1s;
     background-color: white;
   }
@@ -41,7 +38,7 @@ export const Slider = styled.span`
   }
 
     ${Checkbox}:checked + &:before {
-      transform: translateX(33px);
+      transform: translateX(27px);
     }
   
 `;

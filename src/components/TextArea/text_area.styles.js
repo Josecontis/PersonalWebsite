@@ -49,7 +49,7 @@ const rubberBand = keyframes`
 
 export const Container = styled.div`
   position: absolute;
-  top: 30%;
+  top: 28vh;
   left: 145px;
   user-select: none;
   color: #ffffff;
@@ -116,7 +116,7 @@ const deconstructed = keyframes `
 
 export const Paragraph = styled.div`
   width: 40vw;
-  margin-top: 70px;
+  margin-top: 2vh;
   font-size: 25px;
   animation: ${toAnimate} 1s 2s backwards;
   animation: ${deconstructed} 5s;

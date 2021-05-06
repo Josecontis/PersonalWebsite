@@ -5,9 +5,9 @@ export const Container = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 95vh;
+  height: 100vh;
   background: black;
-  width: 110px;
+  width: 90px;
   z-index: 1;
   text-align: center;
 
@@ -33,7 +33,7 @@ export const Logo = styled.img`
 export const LinkBlank = styled.a``;
 
 export const Nav = styled.nav`
-  top: 27%;
+  top: 30%;
   width: 100%;
   display: block;
   position: absolute;
@@ -43,7 +43,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  padding: 17px 35px;
+  padding: 11px 30px;
   color: ${props => props.theme.accent};
   display: block;
   position: relative;
@@ -69,7 +69,7 @@ export const NavLink = styled(Link)`
 
   &:after {
     font-family: 'Zen Dots', cursive;
-    font-size: 13px;
+    font-size: 10px;
     letter-spacing: 1px;
     position: absolute;
     bottom: 30%;
