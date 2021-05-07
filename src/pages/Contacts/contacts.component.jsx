@@ -20,7 +20,8 @@ class Contacts extends Component {
     {
       emailFlag: false, // modifico contenuto variabile di istanza state
       nameFlag: false,
-      txtFlag: false
+      txtFlag: false,
+      testFlag: 0,
     };
   }
 
@@ -30,19 +31,21 @@ class Contacts extends Component {
 
     let templateParams = {
       from_name: document.getElementById("name").value,
-      //from_email: document.getElementById("email").value, se non fa così provare con questo al posto di to_name
-      to_name: 'peppeco98@gmail.com',
       subject: document.getElementById("subject").value,
+      to_name: 'peppeco98@gmail.com',
       message_html: document.getElementById("message").value,
+      from_email: document.getElementById("email").value,
+      reply_to: "filipmonta@libero.it",
     }
 
-    //console.log('tmpl', templateParams);
+    console.log('tmpl', this.state.testFlag);
     emailjs.send('service_dx9tuej', 'template_03o7ni1', templateParams, 'user_a25h2t1IePEbQPptKN2TZ')
-      .then(templateParams ? <CustomAlert Success={true} /> : <CustomAlert Success={false} />);
+    templateParams ? this.setState({ testFlag: 1 }) : this.setState({ testFlag: -1 });
   };
 
 
   render() {
+
     const emailConstraints = content => {
       if (content.target.value === '')
         this.setState({ emailFlag: false }) //setta dinamicamente l'attivazione del bottone
@@ -60,6 +63,15 @@ class Contacts extends Component {
         this.setState({ txtFlag: false }) //setta dinamicamente l'attivazione del bottone
       else
         this.setState({ txtFlag: true })
+    }
+
+    const checkTest = content => {
+      if (content.target.value === 1)
+        this.render(<CustomAlert Success={true} />)
+      else {
+        if (content.target.value === -1)
+          this.render(<CustomAlert Success={false} />)
+      }
     }
 
     return (
@@ -85,7 +97,7 @@ class Contacts extends Component {
               onChange={txtConstraints}
             ></Text>
             <CustomButton className={this.state.txtFlag && this.state.nameFlag && this.state.emailFlag && "active"}
-              isContact>INVIA E-MAIL</CustomButton>
+              isContact onClick={checkTest}>INVIA E-MAIL</CustomButton>
           </Container>
         </TextArea>
       </React.Fragment>

@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <React.Fragment>
       <LogoArea/>
-        
       <TextArea
         home={true}
         pre={"Ciao,~Sono Giuseppe,~Web Developer!"}

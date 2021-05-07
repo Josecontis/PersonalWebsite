@@ -11,40 +11,34 @@ const setVisibility = props => {
   
 export const Text = styled.div`
     text-align: center;
-    font-size: 20px;
+    font-size: 12px;
 `;
 
 export const Alert = styled.div`
-    padding: 20px;
+    padding: 10px;
     color: white;
     opacity: 1;
-    margin-left: 900px;
+    margin-left: 45vw;
     transition: opacity 0.6s;
-    margin-bottom: 15px;
-    width: 600px;
+    width: 20vw;
     position: absolute;
     z-index:2;
-   
 
     ${getAlertStyles}
     ${setVisibility}   
 `;
 
-
-
 export const CloseBtn = styled.button`
-    margin-left: 15px;
+    margin-left: 10px;
     color: white;
     font-weight: bold;
     float: right;
-    font-size: 25px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 25px;
     cursor: pointer;
     border: none;
     background: none;
-
     
-
     &:hover {
     color: black;
 }
