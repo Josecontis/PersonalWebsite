@@ -9,7 +9,6 @@ const svgAnimation = keyframes`
   }
 `;
 
-
 const svgRotation = keyframes`
 0% { opacity: 0; transform: rotate(0); }
 100% { opacity: 1; transform: rotate(360deg); }
@@ -33,15 +32,17 @@ export const Container = styled.div`
     animation: ${svgRotation} 5s;
 
     *#G {
-    animation: ${svgAnimation} 12s;
-    animation: ${svgRotation} 5s;
+      fill: ${(props) => props.theme.glogo};
+      animation: ${svgAnimation} 12s;
+      animation: ${svgRotation} 5s;
     }
     *#C {
+      fill: ${(props) => props.theme.clogo};
       animation: ${svgAnimation} 36s;
     }
   }
 
-  @media screen and (max-width: 1600px) and (orientation: landscape){
+  @media screen and (max-width: 1600px) and (orientation: landscape) {
     display: none;
   }
   @media screen and (max-height: 1600px) and (orientation: portrait) {

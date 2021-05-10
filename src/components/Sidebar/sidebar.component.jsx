@@ -29,10 +29,9 @@ export default function Sidebar() {
   return (
     <React.Fragment>
       <Container>
-        <Header>
-        
+        <Header>        
           <Link to="/">
-            <Logo src={logo} alt="Giuseppe Conticchio Logo" />
+            <Logo src={logo} alt="Logo" />
           </Link>
           <SwitchButton />
         </Header>

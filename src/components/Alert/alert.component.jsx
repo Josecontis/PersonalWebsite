@@ -14,7 +14,8 @@ export default function CustomAlert(props) {
         ) : (
             <Alert value={actived} flag={props.Success}>
                 <CloseBtn onClick={() => setActived(true)}>×</CloseBtn>
-                <Text>OPERAZIONE FALLITA!</Text>
+                <Text>OPERAZIONE FALLITA! <br/>
+                    Inserire l'e-mail</Text>
             </Alert>)
     );
 }

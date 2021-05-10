@@ -20,7 +20,7 @@ const subAnimation = keyframes`
 `;
 export const SubDate = styled.span`
   margin-top: 10px;
-  margin-left: 210px;
+  margin-left: 200px;
   position: absolute;
   font-family: 'Zen Dots', cursive;
   font-size: 15px;
@@ -40,7 +40,7 @@ export const SubDate = styled.span`
 `;
 
 export const MonthStyle = styled.span`
-  margin-left: 210px;
+  margin-left: 200px;
   bottom: 48%;
   font-weight: bold;
   position: absolute;
@@ -63,10 +63,10 @@ export const MonthStyle = styled.span`
 `;
 
 export const Container = styled.div`
-margin-left: 350px;
+margin-left: 320px;
 margin-top: 350px;
 position: absolute;
-color: #8d8d8d;
+color: ${props => props.theme.foreground};
 user-select: none;
 width: auto;
 
@@ -81,12 +81,12 @@ width: auto;
 
 export const DateStyle = styled.div`
   font-size 120px;
-  right: 60px;
+  right: 10px;
   position: relative;
   font-family: 'Zen Dots', cursive;
   -webkit-font-smoothing: antialiased;
   -webkit-text-fill-color: rgba(0,0,0,0);
-  -webkit-text-stroke-color: ${props => props.theme.primary};
+  -webkit-text-stroke-color: ${props => props.theme.date};
   -webkit-text-stroke-width: 5px;
 
   animation: ${dateAnimation} 36s;

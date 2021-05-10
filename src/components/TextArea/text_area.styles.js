@@ -62,7 +62,8 @@ export const Span = styled.span`
   font-size: 7.2vh;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
   display: inline-block;
-  
+  color: ${props => props.theme.text};
+
   &:hover {
     animation: ${rubberBand} 1s ease backwards;
     color: ${props => props.theme.primary};
@@ -87,7 +88,7 @@ export const Span = styled.span`
 
 export const Sub = styled.h2`
   margin-top: 35px;
-  color: #8d8d8d;
+  color: ${props => props.theme.foreground};
   margin-left: 10px;
   font-size: ${props => props.size || ".3em"};
   letter-spacing: 0.1em;
@@ -118,6 +119,7 @@ export const Paragraph = styled.div`
   width: 40vw;
   margin-top: 2vh;
   font-size: 25px;
+  color: ${props => props.theme.text};
   animation: ${toAnimate} 1s 2s backwards;
   animation: ${deconstructed} 5s;
   > * {
@@ -149,7 +151,7 @@ export const Title = styled.h1`
   font-size: 5vh;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
   font-weight: 100;
-  color: ${props => props.theme.primary};
+  color: ${props => props.theme.title};
 
   > span {
     margin-left: 0.1em;

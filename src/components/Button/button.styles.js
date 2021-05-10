@@ -29,14 +29,14 @@ const getButtonStyles = props => {
 
 export const Button = styled.button`
   background: ${props => props.theme.background};
-  color: ${props => props.theme.primary};
+  color: ${props => props.theme.button};
   opacity: 0;
   display: inline-block;
   
   cursor: pointer;
   font-family: 'Orbitron', sans-serif, 'Zen Dots', cursive;
 
-  border: 2px solid ${props => props.theme.primary};
+  border: 2px solid ${props => props.theme.button};
   
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
@@ -51,7 +51,7 @@ export const Button = styled.button`
     
     &:hover {
       color: ${props => props.theme.background};
-      box-shadow: 300px 0 0 0 ${props => props.theme.primary} inset,-300px 0 0 0 ${props => props.theme.primary} inset;
+      box-shadow: 300px 0 0 0 ${props => props.theme.button} inset,-300px 0 0 0 ${props => props.theme.button} inset;
 }
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {

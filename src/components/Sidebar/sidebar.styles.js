@@ -11,7 +11,7 @@ export const Container = styled.div`
   z-index: 1;
   text-align: center;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     width: 85px;
   }
 `;
@@ -26,8 +26,17 @@ export const Header = styled.div`
 export const Logo = styled.img`
   display: block;
   margin: 30px 3px;
-  width: 100%;
-  height: 100%;
+  width: 60px;
+  height: 60px;
+
+    *#G {
+      fill: ${(props) => props.theme.glogo};
+    }
+    *#C {
+      fill: ${(props) => props.theme.clogo};
+    }
+  
+
 `;
 
 export const LinkBlank = styled.a``;
@@ -38,58 +47,56 @@ export const Nav = styled.nav`
   display: block;
   position: absolute;
   text-align: center;
-  border-top: 1px solid #515152;
- 
+  border-top: 1px solid ${(props) => props.theme.foreground};
 `;
 
 export const NavLink = styled(Link)`
   padding: 11px 30px;
-  color: ${props => props.theme.accent};
+  color: ${(props) => props.theme.second};
   display: block;
   position: relative;
   text-align: center;
-  border-bottom: 1px solid #515152;
+  border-bottom: 1px solid ${(props) => props.theme.foreground};
 
- @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     padding: 10px 27px;
   }
   @media only screen and (min-width: 800px) {
-  > svg {
-    transition: all 0.3s ease-out;
-  }
+    > svg {
+      transition: all 0.3s ease-out;
+    }
 
-  &.active,
-  &:hover {
-    color: ${props => props.theme.primary};
-  }
+    &.active,
+    &:hover {
+      color: ${(props) => props.theme.primary};
+    }
 
-  &:hover svg {
-    opacity: 0;
-  }
+    &:hover svg {
+      opacity: 0;
+    }
 
-  &:after {
-    font-family: 'Zen Dots', cursive;
-    font-size: 10px;
-    letter-spacing: 1px;
-    position: absolute;
-    bottom: 30%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.3s ease-out;
-  }
+    &:after {
+      font-family: "Zen Dots", cursive;
+      font-size: 10px;
+      letter-spacing: 1px;
+      position: absolute;
+      bottom: 30%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+    }
 
-  &[name]:after {
-    content: attr(name);
-  }
+    &[name]:after {
+      content: attr(name);
+    }
 
-  &:hover:after {
-    opacity: 1;
-  } 
-}
+    &:hover:after {
+      opacity: 1;
+    }
+  }
 `;
-
 
 export const List = styled.ul`
   position: absolute;
@@ -107,10 +114,10 @@ export const ChildrenList = styled.li`
     display: block;
     width: 40%;
     margin: auto;
-    color: ${props => props.theme.primary};
-    transition: transform .5s;
+    color: ${(props) => props.theme.primary};
+    transition: transform 0.5s;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 700px) {
       width: 35%;
       padding: 5px 0;
     }

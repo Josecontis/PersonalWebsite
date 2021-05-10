@@ -8,6 +8,7 @@ export const Container = styled.div`
   background: black;
   width: 100vw;
   z-index: 1;
+  color: ${props => props.theme.foreground};
   text-align: center;
   padding: 3vh;
   font-size: 1.3vh;
