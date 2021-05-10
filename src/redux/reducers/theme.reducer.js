@@ -1,3 +1,4 @@
+// tema iniziale (stato iniziale)
 const theme = {
   primary: "#3EE8FA",
   second: "#008492",
@@ -15,7 +16,7 @@ const theme = {
 // si parte da uno stato iniziale e si esegue un azione
 const themeReducer = (state = theme, action) => {
   switch (
-    action.type // se il tipo di questa azione è nascondi popup carrello allora restituisci il falso di hidden
+    action.type // se il tipo di questa azione è LIGHT_THEME allora restituisce il tema chiaro altrimenti il tema scuro
   ) {
     case "LIGHT_THEME":
       return action.payload;

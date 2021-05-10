@@ -1,4 +1,4 @@
-//metodi per definire lo stato del popup e della lista degli item presenti nel carrello
+//metodi per definire lo stato effettivo del tema
 export const lightTheme = () => {
   return {
     type: "LIGHT_THEME",

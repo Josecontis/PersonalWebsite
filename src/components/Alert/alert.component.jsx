@@ -4,7 +4,7 @@ import { CloseBtn, Alert, Text } from './alert.styles';
 //verificare se funziona
 export default function CustomAlert(props) {
     const [actived, setActived] = useState(false);
-    console.log('success:', props.Success)
+    //console.log('success:', props.Success)
     return (props.Success ?
         (
             <Alert value={actived} flag={props.Success}>

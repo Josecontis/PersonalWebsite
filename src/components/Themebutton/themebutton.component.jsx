@@ -8,10 +8,10 @@ import {lightTheme, darkTheme} from '../../redux/theme.action';
 
 class SwitchButton extends React.Component {
 
-  render() {console.log(this.props.theme);
+  render() {
     return (
       <Container>
-        <Checkbox />
+        <Checkbox />{/* al click dello slider verifica se il tema passato al themeprovider è con il colore celeste come priamrio allora è il light altrimenti sarà il dark */}
         <Slider onClick={this.props.theme.primary==="#3EE8FA" ? this.props.lightTheme : this.props.darkTheme }>
           <SunIcon />
           <MoonIcon />
@@ -21,9 +21,10 @@ class SwitchButton extends React.Component {
   }
 }
 
-//metodo che preleva lo stato. il parametro rappresenta tutti i dati nel redux store
+//metodo che preleva lo stato. il parametro rappresenta tutti i dati del tema corrente
 const mapStateToProps = (state) => {
-  return { theme: state.switchTheme };
+  return { theme: state.switchTheme };// theme sarà il tema
 }
 
+//connect aggiorna il tema corrente al reducer 
 export default connect(mapStateToProps, {lightTheme, darkTheme})(SwitchButton);

@@ -1,38 +1,26 @@
-# Portfólio
+# Portfolio
 
-Projeto criado afim de aplicar os conhecimentos adquiridos até aqui e que continuarei aprendendo.
+this project has been realized to create a personal portfolio and to do practice with react and his comoponents.
 
-## Conteúdo
+## Tools
 
-- [Informação Geral](#informação-geral)
-- [Tecnologias](#tecnologias)
-- [Configuração](#configuração)
-- [Build Deploy](#build-+-deploy)
-- [Implementações Futuras](#implementações-futuras)
-
-## Informação Geral
-
-Projeto construido tendo como modelo o [site](https://jacekjeznach.com/)
-
-## Tecnologias
-
-Projetado e construido com:
+build with:
 
 - React version: 16.13
 - React Router Dom version: 5.1
 - React Typing Animation version: 1.6
 - Styled-Components version: 5.0.1
 
-## Configuração
+## Configuration
 
-Pra rodar esse projeto, você deve clonar esse diretório.
+to run this project, you should clone the repo.
 
 ```
-$ git clone https://github.com/williamjesusdev/portfolio.git
-$ cd portfolio
+$ git clone https://github.com/Josecontis/PersonalWebsite.git
+$ cd PersonalWebsite
 ```
 
-e instalar localmente usando:
+and installing:
 **yarn**
 
 ```
@@ -46,21 +34,5 @@ $ yarn start
 $ npm install
 $ npm start
 ```
-
-## Build + Deploy
-
-Pra efetuar o deploy foi configurado um script **deploy** na raiz do projeto que necessita de uma biblioteca global e da alteração no 'package.json' informando o endereço do deploy.
-
-```
-$ yarn global add gh-pages
-$ npm instal -g gh-pages
-```
-
-## Implementações Futuras
-
-Serão implementados futuramente:
-
-- Form de contato
-- Slyder com Projetos
-- Animação das Tecnologias
-- Página 404
+## Authors
+Realized by Josecontis.

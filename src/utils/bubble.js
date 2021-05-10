@@ -1,4 +1,4 @@
-export function bubbleCursor(options) {
+export function bubbleCursor(options, theme) {
     let hasWrapperEl = options && options.element
     let element = hasWrapperEl || document.body
   
@@ -127,9 +127,9 @@ export function bubbleCursor(options) {
   
         const scale =
           0.2 + (this.initialLifeSpan - this.lifeSpan) / this.initialLifeSpan
-  
-        context.fillStyle = props => props.theme.primary;
-        context.strokeStyle = props => props.theme.second;
+          //console.log(theme.primary);
+        context.fillStyle = theme;
+        context.strokeStyle = theme;
         context.beginPath()
         context.arc(
           this.position.x - (this.baseDimension / 2) * scale,
