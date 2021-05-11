@@ -13,7 +13,7 @@ export const lightTheme = () => {
       date: "black",
       bgskill: "#1d1d1d",
       clogo: "#8B939C",
-      glogo: "black",
+      glogo: "#535454",
     },
   };
 };

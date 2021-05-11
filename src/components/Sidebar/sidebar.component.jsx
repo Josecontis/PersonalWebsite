@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/sideBarImg/header-logo.svg";
+import logo from "../../assets/pages-logo.svg";
 
 import { ReactComponent as Home } from "../../assets/sideBarImg/home.svg";
 import { ReactComponent as About } from "../../assets/sideBarImg/about.svg";
@@ -13,6 +13,7 @@ import { ReactComponent as Facebook } from "../../assets/sideBarImg/facebook.svg
 import { ReactComponent as Linkedin } from "../../assets/sideBarImg/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/sideBarImg/github.svg";
 import SwitchButton from '../Themebutton/themebutton.component';
+import { ReactComponent as Lg } from "../../assets/pages-logo.svg";
 
 import {
   Container,
@@ -20,7 +21,7 @@ import {
   Logo,
   Nav,
   NavLink,
-  LinkBlank,
+  LinkBlank, 
   List,
   ChildrenList
 } from "./sidebar.styles";
@@ -31,7 +32,9 @@ export default function Sidebar() {
       <Container>
         <Header>        
           <Link to="/">
-            <Logo src={logo} alt="Logo" />
+            <Logo src={"../../assets/pages-logo.svg"} alt="My logo">
+              <Lg/>
+            </Logo>
           </Link>
           <SwitchButton />
         </Header>

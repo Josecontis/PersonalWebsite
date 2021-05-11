@@ -81,7 +81,7 @@ width: auto;
 
 export const DateStyle = styled.div`
   font-size 120px;
-  right: 10px;
+  right: -10px;
   position: relative;
   font-family: 'Zen Dots', cursive;
   -webkit-font-smoothing: antialiased;

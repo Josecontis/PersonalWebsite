@@ -20,23 +20,23 @@ export const Header = styled.div`
   background: black;
   display: block;
   padding: 6px 5px;
+ 
   }
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.div`
   display: block;
-  margin: 30px 3px;
-  width: 60px;
-  height: 60px;
-
-    *#G {
-      fill: ${(props) => props.theme.glogo};
-    }
-    *#C {
-      fill: ${(props) => props.theme.clogo};
-    }
+  margin: 3px 3px;
+  vertical-align: top;
+  background-image: url(${props=>props.src}) no-repeat top left;
+  z-index: 3;
+  *#G {
+    fill: ${(props) => props.theme.glogo};
+  }
+  *#C {
+    fill: ${(props) => props.theme.clogo};
   
-
+}
 `;
 
 export const LinkBlank = styled.a``;
