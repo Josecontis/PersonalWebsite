@@ -1,6 +1,6 @@
 # Portfolio
 
-this project has been realized to create a personal portfolio and to do practice with react and his comoponents.
+this project has been realized to create a personal portfolio and to do practice with react and his components.
 
 ## Tools
 
