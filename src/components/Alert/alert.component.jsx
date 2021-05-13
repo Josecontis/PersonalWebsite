@@ -8,12 +8,12 @@ export default function CustomAlert(props) {
     return (props.Success ?
         (
             <Alert value={actived} flag={props.Success}>
-                <CloseBtn onClick={() => setActived(true)}>×</CloseBtn>
+                <CloseBtn onClick={() => {setActived(true);window.location.reload()}}>×</CloseBtn>
                 <Text>OPERAZIONE AVVENUTA CON SUCCESSO!</Text>
             </Alert>
         ) : (
             <Alert value={actived} flag={props.Success}>
-                <CloseBtn onClick={() => setActived(true)}>×</CloseBtn>
+                <CloseBtn onClick={() => {setActived(true);window.location.reload()}}>×</CloseBtn>
                 <Text>OPERAZIONE FALLITA! <br/>
                     Inserire l'e-mail</Text>
             </Alert>)

@@ -24,7 +24,7 @@ export const Header = styled.div`
   }
 `;
 
-export const Logo = styled.div`
+export const LogoContainer = styled.div`
   display: block;
   margin: 3px 3px;
   vertical-align: top;

@@ -8,6 +8,7 @@ import { bubbleCursor } from "../src/utils/bubble";
 import { init } from "emailjs-com";
 import reducers from "./redux/reducers/root.reducer";
 
+
 init("user_a25h2t1IePEbQPptKN2TZ");
 new bubbleCursor();
 ReactDOM.render(

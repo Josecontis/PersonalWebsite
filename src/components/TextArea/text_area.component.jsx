@@ -11,9 +11,8 @@ export default function TextArea({ home, pre, title, subtitle, children }) {
   return (
     <Container>
       <Typing
-        cursorClassName="custom"
         cursor={<span>_</span>}
-        speed={150}
+        speed={25}
         onFinishedTyping={() => setActived(true)}>
         {!home ? (
           <Title>{title}</Title> //in questo caso se non è la homepage stampa il titolo

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/pages-logo.svg";
-
 import { ReactComponent as Home } from "../../assets/sideBarImg/home.svg";
 import { ReactComponent as About } from "../../assets/sideBarImg/about.svg";
 import { ReactComponent as Skills } from "../../assets/sideBarImg/skills.svg";
@@ -12,46 +10,46 @@ import { ReactComponent as Contact } from "../../assets/sideBarImg/contact.svg";
 import { ReactComponent as Facebook } from "../../assets/sideBarImg/facebook.svg";
 import { ReactComponent as Linkedin } from "../../assets/sideBarImg/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/sideBarImg/github.svg";
-import SwitchButton from '../Themebutton/themebutton.component';
-import { ReactComponent as Lg } from "../../assets/pages-logo.svg";
+import SwitchButton from "../Themebutton/themebutton.component";
+import { ReactComponent as Logo } from "../../assets/pages-logo.svg";
 
 import {
   Container,
   Header,
-  Logo,
+  LogoContainer,
   Nav,
   NavLink,
-  LinkBlank, 
+  LinkBlank,
   List,
-  ChildrenList
+  ChildrenList,
 } from "./sidebar.styles";
 
 export default function Sidebar() {
   return (
     <React.Fragment>
       <Container>
-        <Header>        
-          <Link to="/">
-            <Logo src={"../../assets/pages-logo.svg"} alt="My logo">
-              <Lg/>
-            </Logo>
+        <Header>
+          <Link to="*">
+            <LogoContainer src={"../../assets/pages-logo.svg"} alt="My logo">
+              <Logo />
+            </LogoContainer><SwitchButton />
           </Link>
-          <SwitchButton />
+          
         </Header>
         <Nav>
-          <NavLink exact to="/" name=".home()" activeClassName="active">
+          <NavLink exact to="*" name=".home()">
             <Home />
           </NavLink>
-          <NavLink to="about" name=".info personali()" activeClassName="active">
+          <NavLink to="/about" name=".info personali() " replace>
             <About />
           </NavLink>
-          <NavLink to="skills" name=".abilità()" activeClassName="active">
+          <NavLink to="skills" name=".abilità()" replace>
             <Skills />
           </NavLink>
-          <NavLink to="works" name=".progetti()" activeClassName="active">
+          <NavLink to="works" name=".progetti()" replace>
             <Works />
           </NavLink>
-          <NavLink to="contacts" name=".contatti()" activeClassName="active">
+          <NavLink to="contacts" name=".contatti()" replace>
             <Contact />
           </NavLink>
         </Nav>
