@@ -10,14 +10,14 @@ import Works from "./pages/Works/works.component";
 function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
+      <Route exact path="/"  component={Home} />
       <Route path="/about" component={About} />
       <Route path="/skills" component={Skills} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/works" component={Works} />
       <Route path="*">
         <Redirect to="/" />
-      </Route>
+      </Route> 
     </Switch>
   );
 }

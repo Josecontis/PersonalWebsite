@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // import { connect } from 'react-redux';
 // import {selectTheme} from './redux/theme.action';
@@ -13,7 +13,7 @@ import Routes from "./routes";
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <ThemeProvider theme={this.props.theme}>
           {/* tema effettivo che si aggiorna ogni volta grazie allo store nel provider */}
           <GlobalStyle />
@@ -22,7 +22,7 @@ class App extends React.Component {
             <Routes />
           </Container>
         </ThemeProvider>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
