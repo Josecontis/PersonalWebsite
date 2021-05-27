@@ -20,7 +20,7 @@ const subAnimation = keyframes`
 `;
 export const SubDate = styled.span`
   margin-top: 10px;
-  margin-left: 200px;
+  margin-left: 220px;
   position: absolute;
   font-family: 'Zen Dots', cursive;
   font-size: 15px;
@@ -40,7 +40,7 @@ export const SubDate = styled.span`
 `;
 
 export const MonthStyle = styled.span`
-  margin-left: 200px;
+  margin-left: 220px;
   bottom: 48%;
   font-weight: bold;
   position: absolute;
@@ -81,7 +81,7 @@ width: auto;
 
 export const DateStyle = styled.div`
   font-size 120px;
-  right: -10px;
+  right: 10px;
   position: relative;
   font-family: 'Zen Dots', cursive;
   -webkit-font-smoothing: antialiased;
